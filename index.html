@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Terminal</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1 class="title">Оформление заказа</h1>
+        <form class="form">
+            <div class="form-elem">
+                <label>Название пиццы:</label>
+                <select class="form-select" id="pizza"></select>
+            </div>
+            <div class="form-elem">
+                <label>Размер, см:</label>
+                <select class="form-select" id="size"></select>
+            </div>
+            <div class="form-elem">
+                <label>Соус:</label>
+                <select class="form-select" id="sauce"></select>
+            </div>
+            <div class="form-elem">
+                <button class="btn-form" id="submit">Заказать</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup-fade">
+        <div class="popup">
+            <p class="popup-close">Закрыть</p>
+            <h1 class="title">Чек</h1>
+            <div class="order">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div class="cv-spinner">
+            <span class="spinner"></span>
+        </div>
+    </div>
+
+    <script src="js/loading.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
